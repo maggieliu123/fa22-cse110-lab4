@@ -41,4 +41,12 @@
     5. This will result in the boolean `false` because the number conversion for the boolean `true` is 1, not 2.
     6. This will result in the boolean `true` because any argument that is not `0`, `-0`, or `NaN` when put in the `Boolean()` will return true. Therefore, `Boolean(2) = true` and `true === true ` is true.  
 15. The difference between the `==` and `===` is that `===` is a strict comparison and immediately evaluates the expression without any type conversion.
-16. 
+16. *In js file*
+17. The result will be a list containing the numbers `2`, `4`, and `6`. We first start by looking at the method call `modifyArray([1,2,3], doSomething)`. We look into the `modifyArray` definition. Inside, a list `newArr` is created. Each element of the input array (`[1,2,3]`) is then used as an argument in the `callback` method which is the `doSomething` function. This doubles the value of the input. Once the element is doubled, that doubled element is pushed into `newArr`. Once all the elements are iterated through, `newArr` is populated with the elements that have been doubled from the origin `array`. 
+18. *In js file*
+19. The output of the code is below:
+    1
+    4
+    3
+    2
+20. 
