@@ -1,0 +1,2 @@
+1.  The bug was that `num1` and `num2` were of type `string`. Therefore, adding the two variables meant string concatenation rather than arithmetic addition.
+2.  I would convert `num1` and `num2` to a number by using `Number()`. Screenshots included in screenshots directory
